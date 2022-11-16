@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(32, 32, 32);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    overflow: hidden;
+}
+section{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    
+}
+.fonD{
+    position: fixed;
+    top: 0.5%;
+    right: 5%;
+    width: 300px;
+    z-index: 11;
+
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(50px);
+    animation: apparition 1s 1s ease-out forwards;
+}
+section div{
+    background-color: rgb(197, 197, 197);
+    width: 600px;
+    margin: auto;
+    border-radius: 25px;
+    transition: 0.5s;
+
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: apparition 0.5s 0.3s ease-out forwards;
+}
+section div:hover{
+    transition: 0.5s;
+    box-shadow: 0px 0px 25px -5px rgba(255, 255, 255, 0.5);
+    width: 700px;
+}
+section div img{
+    width: 300px;
+    display: block;
+    position: absolute;
+    bottom: -150px;
+    left: -70px;
+    z-index: 15;
+
+    opacity: 0;
+    transform: translateY(-25px);
+    animation: apparition 1s 2s ease-out forwards;
+}
+section div h3{
+    text-align: center;
+    font-size: 2.3em;
+    margin: 10% auto 5%;
+    font-family: 'Fredoka One', cursive;
+
+    
+    opacity: 0;
+    transform: translateY(-35px);
+    animation: apparition 0.5s 0.6s ease-out forwards;
+}
+section div hr{
+    width: 250px;
+    height: 5px;
+    border-radius: 50px;
+    margin: 0 auto 10%;
+    border: black;
+    background-color: black;
+
+    opacity: 0;
+    transform: translateY(-35px);
+    animation: apparition 0.5s 0.8s ease-out forwards;
+}
+section div form input{
+    display: block;
+    padding: 5px;
+    width: 250px;
+    border-radius: 5px;
+    margin: 5% auto;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+
+    opacity: 0;
+    transform: translateY(-35px);
+    animation: apparition 0.5s 1s ease-out forwards;
+}
+section div form #monMdp{
+    margin-bottom: 10%;
+
+    opacity: 0;
+    transform: translateY(-35px);
+    animation: apparition 0.5s 1.2s ease-out forwards;
+}
+section div form button{
+    display: block;
+    margin: 5% auto;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.5s;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 15px -10px black;
+
+    opacity: 0;
+    transform: translateY(-35px);
+    animation: apparition 0.5s 1.4s ease-out forwards;
+
+}
+section div form button:hover{
+    transition: 0.5s;
+    color: white;
+    background-color: black;
+    box-shadow: 0px 5px 25px -5px rgb(255, 255, 255);
+
+}
+
+@keyframes apparition{
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
